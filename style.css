@@ -1,3 +1,124 @@
+:root {
+    --light-grey: #888888;
+    --dark-grey: #707070;
+    --light-white: #FFFFFF;
+}
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica;
+}
+
+/**********HEADER***************/
+
 header {
-    background-color: #707070;
+    background-color: var(--dark-grey);
+    height: 45vh;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: var(--light-white);
+}
+
+header h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: var(--light-white);
+    margin-bottom: 5px;
+}
+
+header p {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    color: var(--light-white);
+}
+
+header .buttons {
+    display: flex;
+    justify-content: center;
+}
+
+header button {
+    margin: 45px;
+    padding: 7px 15px;
+    font-size: 14px;
+    color: var(--dark-grey);
+}
+
+/************NAV*************/
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    color: var(--light-grey);
+    display: flex;
+}
+
+nav .text-content {
+    width: 45%;
+    margin-left: 20px;
+}
+
+nav h2 {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav p{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav form {
+    width: 45%;
+    margin-left: 85px;
+}
+
+nav form input {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 340px;
+    height: 30px;
+}
+
+nav form .gender {
+    display: flex;
+}
+
+nav form .gender input {
+    margin-right: 6px;
+    width: 14px;
+    height: 14px;
+}
+
+nav form .gender label {
+    margin-right: 6px;
+}
+
+nav form button {
+    width: 340px;
+    height: 39px;
+    border: 1px solid var(--dark-grey);
+    border-radius: 5px;
 }
