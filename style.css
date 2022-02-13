@@ -14,6 +14,11 @@ body {
     font-family: Helvetica;
 }
 
+section {
+    width: 100vw;
+    height: 100vh;
+}
+
 /**********HEADER***************/
 
 header {
@@ -121,4 +126,12 @@ nav form button {
     height: 39px;
     border: 1px solid var(--dark-grey);
     border-radius: 5px;
+}
+
+/************Produtos*************/
+
+section hr{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 20px;
 }
