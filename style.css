@@ -130,8 +130,84 @@ nav form button {
 
 /************Produtos*************/
 
+section .divison-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 section hr{
     margin-top: 40px;
     margin-bottom: 40px;
-    font-size: 20px;
+    width: 350px;
+}
+
+section h3 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.products {
+    width: 931px;
+    height: 740px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 100px;
+    font-weight: 300;
+    color: var(--light-grey);
+}
+
+.products .list-products{
+    margin: 10px;
+    justify-content: left;
+}
+
+.products img{
+    width: 200px;
+    height: 150px;
+    margin-bottom: 10px;
+    border: 0.5px solid var(--light-grey);
+}
+
+.products .text-container {
+    justify-content: left;
+}
+
+.products h1 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    
+}
+
+.products p {
+    font-size: 12px;
+    width: 200px;
+    height: 60px;
+}
+
+.products h3 {
+    font-size: 12px;
+    justify-content: left;
+    margin-bottom: 3px;
+}
+
+.products h4 {
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.products h5 {
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+button {
+    width: 200px;
+    height: 30px;
+    color: var(--light-grey);
+}
+
+.more-products {
+    margin-right: 40px;
 }
