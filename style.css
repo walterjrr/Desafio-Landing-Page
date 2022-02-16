@@ -208,6 +208,71 @@ button {
     color: var(--light-grey);
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 .more-products {
-    margin-right: 40px;
+    margin-top: 80px;
+    align-items: center;
+}
+
+/*************COMPARTILHAR*********/
+
+.share_bar h1 {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.share_bar form {
+    display: flex;
+    justify-content: center;
+}
+
+.share_bar form input {
+    width: 340px;
+    height: 30px;
+}
+.share_bar form .name,.email {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.share_bar form .name {
+    margin-right: 15px;
+}
+
+.share_bar form .email {
+    margin-left: 15px;
+}
+
+.share_bar button {
+    margin-bottom: -105px;
+}
+
+/*********FOOTER************/
+
+footer div {
+    background-color: var(--dark-grey);
+    height: 40vh;
+    clip-path: polygon(0 45%, 100% 0, 100% 100%, 0 100%);
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer div p {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 12px;
 }

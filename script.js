@@ -1,6 +1,14 @@
 const productsContainer = document.querySelector(".products")
 
-const url = "https://frontend-intern-challenge-api.iurykrieger.vercel.app/products"
+const buttonAddProducts = document.querySelector(".more-products")
+
+let page = [0]
+buttonAddProducts.onclick = function(){
+    page.name = 2
+}
+
+console.log(page)
+const url = `https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=${page}`
 
 fetch(url).then(function(res){
     res.json().then(function(data){
@@ -20,9 +28,6 @@ fetch(url).then(function(res){
             </div>
         `
         ).join('')
-
-        console.log(list_products)
-
         productsContainer.innerHTML += list_products
     })
     
