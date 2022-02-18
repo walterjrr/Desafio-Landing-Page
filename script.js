@@ -1,10 +1,21 @@
 const productsContainer = document.querySelector(".products")
 
-const buttonAddProducts = document.querySelector(".more-products")
+const buttonAddProducts = document.querySelectorAll(".more-products")
 
-let page = [0]
+function myFunction() {
+    // Get the snackbar DIV
+    var x = document.getElementById("snackbar");
+  
+    // Add the "show" class to DIV
+    x.className = "show";
+  
+    // After 3 seconds, remove the show class from DIV
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+
+let page = 0
 buttonAddProducts.onclick = function(){
-    page.name = 2
+    page +1
 }
 
 console.log(page)
@@ -32,5 +43,8 @@ fetch(url).then(function(res){
     })
     
 })
+
+
+
 
 
