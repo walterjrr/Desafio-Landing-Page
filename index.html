@@ -48,26 +48,26 @@
                         mattis, consequat velit ut, ultrices orci. Nulla varius elementum erat vel pharetra. Aenean sit
                         amet nisi diae suscipit libero, at mattis augue est vel metus.</p>
                 </div>
-                <form>
+                <form id="form-cadastro" action="gravarDados.html">
                     <label for="">Digite seu Nome</label>
-                    <input type="name">
+                    <input type="name" name="name">
 
                     <label for="">Digite seu e-mail</label>
-                    <input type="email">
+                    <input type="email" name="email">
 
                     <label for="">CPF</label>
-                    <input type="cpf">
+                    <input type="cpf" name="cpf">
 
                     <div class="gender">
-                        <input type="radio" id="male">
+                        <input type="radio" id="male" name="gender">
                         <label for="male">Masculino</label>
-                        <input type="radio" id="female">
+                        <input type="radio" id="female" name="gender">
                         <label for="female">Feminino</label>
                     </div>
 
                     <br>
 
-                    <button id="button-send" onclick="myFunction()">Enviar</button>
+                    <button type="submit" id="button-send" onclick="showToast()">Enviar</button>
 
                 </form>
 
@@ -109,7 +109,7 @@
 
             </form>
             <div class="button-container" >
-                <button onclick="myFunction()">Enviar Agora</button>
+                <button type="submit" onclick="myFunction()">Enviar Agora</button>
             </div>
         </div>
 

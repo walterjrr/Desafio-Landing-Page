@@ -125,6 +125,10 @@ nav form input {
     height: 3rem;
 }
 
+nav form .inputError {
+    border: 2px solid #ff0000;
+}
+
 nav form .gender {
     display: flex;
 }

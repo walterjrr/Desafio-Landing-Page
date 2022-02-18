@@ -2,7 +2,7 @@ const productsContainer = document.querySelector(".products")
 
 const buttonAddProducts = document.querySelectorAll(".more-products")
 
-function myFunction() {
+function showToast() {
     // Get the snackbar DIV
     var x = document.getElementById("snackbar");
   
@@ -43,6 +43,36 @@ fetch(url).then(function(res){
     })
     
 })
+
+let formulario = document.querySelector("#form-cadastro")
+
+formulario.onsubmit = function(event){
+    event.preventDefault()
+
+    let inputNome = document.forms['form-cadastro']['name']
+    let inputEmail = document.forms['form-cadastro']['email']
+    let inputCpf = document.forms['form-cadastro']['cpf']
+    let inputGender = document.forms['form-cadastro']['gender']
+
+    if(!inputNome.value){
+        inputNome.classList.add('inputError')
+    }else{
+        inputNome.classList.remove('inputError')
+    }
+    
+    if(!inputEmail.value){
+        inputEmail.classList.add('inputError')
+    }else{
+        inputEmail.classList.remove('inputError')
+    }
+
+    if(!inputCpf.value){
+        inputCpf.classList.add('inputError')
+    }else{
+        inputCpf.classList.remove('inputError')
+    }
+
+}
 
 
 
