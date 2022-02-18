@@ -10,6 +10,11 @@
     box-sizing: border-box;
 }
 
+html {
+    /*1rem = 10px*/
+    font-size: 62.5%;
+}
+
 body {
     font-family: Helvetica;
 }
@@ -23,30 +28,31 @@ section {
 
 header {
     background-color: var(--dark-grey);
-    height: 45vh;
+    height: 35rem;
+    width: 100%;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
 }
 
 header h1 {
     display: flex;
     justify-content: center;
-    font-size: 20px;
-    margin-bottom: 5px;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
     color: var(--light-white);
 }
 
 header h2 {
     display: flex;
     justify-content: center;
-    font-size: 40px;
+    font-size: 4rem;
     color: var(--light-white);
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
 }
 
 header p {
     display: flex;
     justify-content: center;
-    font-size: 16px;
+    font-size: 1.6rem;
     color: var(--light-white);
 }
 
@@ -56,55 +62,67 @@ header .buttons {
 }
 
 header button {
-    margin: 45px;
-    padding: 7px 15px;
-    font-size: 14px;
+    margin: 4.5rem;
+    padding: 0.7rem 1.5rem;
+    font-size: 1.4rem;
     color: var(--dark-grey);
 }
+
+
+
+header .buttons .divider-buttons1, .divider-buttons2{
+    display: flex;
+}
+
+header .buttons .divider-buttons1 button{
+    z-index: 10;
+    
+}
+
 
 /************NAV*************/
 
 .container {
     display: flex;
-    justify-content: center;
 }
 
 nav {
     color: var(--light-grey);
     display: flex;
+    justify-content: center;
 }
 
 nav .text-content {
     width: 45%;
-    margin-left: 20px;
+    margin-left: 8.5rem;
+    margin-bottom: 5rem;
 }
 
 nav h2 {
-    font-size: 20px;
+    font-size: 2rem;
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
 nav p{
-    font-size: 12px;
+    font-size: 1.2rem;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 2.0rem;
 }
 
 nav form {
     width: 45%;
-    margin-left: 85px;
+    margin-left: 8.5rem;
 }
 
 nav form input {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-bottom: 20px;
-    width: 340px;
-    height: 30px;
+    margin-bottom: 2.0rem;
+    width: 34rem;
+    height: 3rem;
 }
 
 nav form .gender {
@@ -112,20 +130,20 @@ nav form .gender {
 }
 
 nav form .gender input {
-    margin-right: 6px;
-    width: 14px;
-    height: 14px;
+    margin-right: 0.6rem;
+    width: 1.4rem;
+    height: 1.4rem;
 }
 
 nav form .gender label {
-    margin-right: 6px;
+    margin-right: 0.6rem;
 }
 
 nav form button {
-    width: 340px;
-    height: 39px;
-    border: 1px solid var(--dark-grey);
-    border-radius: 5px;
+    width: 34rem;
+    height: 3.9rem;
+    border: 0.1rem solid var(--dark-grey);
+    border-radius: 0.5rem;
 }
 
 /************Produtos*************/
@@ -137,75 +155,74 @@ section .divison-bar {
 }
 
 section hr{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    width: 350px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    width: 35rem;
 }
 
 section h3 {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .products {
-    width: 931px;
-    height: 740px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: 100px;
-    font-weight: 300;
     color: var(--light-grey);
-}
+    display: grid; 
+    margin: auto;
+    align-items: center;
+    
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0px;
+    text-align: center;
 
-.products .list-products{
-    margin: 10px;
-    justify-content: left;
 }
 
 .products img{
-    width: 200px;
-    height: 150px;
-    margin-bottom: 10px;
+    width: 20rem;
+    height: 15rem;
+    margin-bottom: 1rem;
     border: 0.5px solid var(--light-grey);
 }
 
 .products .text-container {
-    justify-content: left;
+    align-items: center;
+    justify-content: center;
 }
 
 .products h1 {
-    font-size: 14px;
-    margin-bottom: 10px;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
     
 }
 
 .products p {
-    font-size: 12px;
-    width: 200px;
-    height: 60px;
+    font-size: 1.2rem;
+    width: 20rem;
+    height: 6rem;
+    margin: auto;
 }
 
 .products h3 {
-    font-size: 12px;
+    font-size: 1.2rem;
     justify-content: left;
-    margin-bottom: 3px;
+    margin-bottom: 0.3rem;
 }
 
 .products h4 {
-    font-size: 16px;
-    margin-bottom: 3px;
+    font-size: 1.6rem;
+    margin-bottom: 0.3rem;
 }
 
 .products h5 {
-    font-size: 12px;
-    margin-bottom: 30px;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
 }
 
 button {
-    width: 200px;
-    height: 30px;
+    width: 20rem;
+    height: 3rem;
     color: var(--light-grey);
+    margin-bottom: 4rem;
 }
 
 .button-container {
@@ -215,43 +232,44 @@ button {
 }
 
 .more-products {
-    margin-top: 80px;
+    margin-top: 8rem;
     align-items: center;
 }
 
 /*************COMPARTILHAR*********/
 
 .share_bar h1 {
-    font-size: 14px;
+    font-size: 1.4rem;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 .share_bar form {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .share_bar form input {
-    width: 340px;
-    height: 30px;
+    width: 34rem;
+    height: 3rem;
 }
 .share_bar form .name,.email {
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
 }
 
 .share_bar form .name {
-    margin-right: 15px;
+    margin-right: 1.5rem;
 }
 
 .share_bar form .email {
-    margin-left: 15px;
+    margin-left: 1.5rem;
 }
 
 .share_bar button {
-    margin-bottom: -105px;
+    margin-bottom: -10.5rem;
 }
 
 /*********FOOTER************/
@@ -270,9 +288,53 @@ footer div {
 }
 
 footer div p {
-    font-size: 20px;
+    font-size: 2rem;
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
     color: white;
-    font-size: 12px;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: 50%;
+    }
+
+    
+    header button {
+        display: block;
+    }
+}
+
+@media (max-width: 580px) {
+    .container {
+        flex-direction: column;
+    }
+    .share_bar form {
+        flex-direction: column;
+        margin-right: 0rem
+    }
+
+    .share_bar form .name,.email {
+        margin-right: 0;
+    }
+
+    .share_bar form .email {
+        margin-left: 0;
+    }
+
+    header .buttons .divider-buttons1, .divider-buttons2{
+        display: block;
+    }
+
+
+
+
+
+
+
+
+
+
+
 }
