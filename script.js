@@ -23,8 +23,8 @@ fetch(url).then(function(res){
                     <h3>De ${item.oldPrice}R$ </h3>
                     <h4>Para ${item.price}R$ </h4>
                     <h5>ou ${item.installments.count} Vezes de ${item.installments.value}R$ </h5>
+                    <button>Comprar</button>
                 </div>    
-                <button>Comprar</button>
             </div>
         `
         ).join('')

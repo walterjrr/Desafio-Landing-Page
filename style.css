@@ -327,14 +327,22 @@ footer div p {
         display: block;
     }
 
+    .list-products {
+        display: flex;
+    }
 
+    .list-products .text-container{
+        display: flex;
+        flex-direction: column;
+        line-height: 8px;
+        margin: 0;
+    }
 
+    .products p {
+        margin-bottom: -18px;
+    }
 
-
-
-
-
-
-
-
+    .products h5 {
+        margin-bottom: 22px;
+    }
 }
