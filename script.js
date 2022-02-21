@@ -2,20 +2,21 @@ const productsContainer = document.querySelector(".products")
 
 const buttonAddProducts = document.querySelectorAll(".more-products")
 
+let hasError = false
+
 function showToast() {
-    // Get the snackbar DIV
-    var x = document.getElementById("snackbar");
-  
-    // Add the "show" class to DIV
-    x.className = "show";
-  
-    // After 3 seconds, remove the show class from DIV
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    if(hasError = false){
+        let x = document.getElementById("snackbar");
+        x.className = "show";
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    }else{
+        return ''
+    }
 }
 
-let page = 0
+let page = 2
 buttonAddProducts.onclick = function(){
-    page +1
+    page++
 }
 
 console.log(page)
@@ -52,27 +53,33 @@ formulario.onsubmit = function(event){
     let inputNome = document.forms['form-cadastro']['name']
     let inputEmail = document.forms['form-cadastro']['email']
     let inputCpf = document.forms['form-cadastro']['cpf']
-    let inputGender = document.forms['form-cadastro']['gender']
 
     if(!inputNome.value){
         inputNome.classList.add('inputError')
+        !hasError
     }else{
         inputNome.classList.remove('inputError')
+        hasError = false
     }
     
     if(!inputEmail.value){
         inputEmail.classList.add('inputError')
+        !hasError
     }else{
         inputEmail.classList.remove('inputError')
+        !hasError
     }
 
     if(!inputCpf.value){
         inputCpf.classList.add('inputError')
+        !hasError
     }else{
         inputCpf.classList.remove('inputError')
+        !hasError
     }
-
 }
+
+
 
 
 

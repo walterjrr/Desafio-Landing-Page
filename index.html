@@ -96,20 +96,20 @@
 
         <div class="share_bar">
             <h1>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</h1>
-            <form>
+            <form id="share-form" action="gravarDados.html">
                 <div class="name">
                     <label for="">Nome do seu amigo:</label>
-                    <input type="name">
+                    <input type="name" name="name">
                 </div>
 
                 <div class="email">
                     <label for="">E-mail:</label>
-                    <input type="email">
+                    <input type="email" name="email">
                 </div>
 
             </form>
             <div class="button-container" >
-                <button type="submit" onclick="myFunction()">Enviar Agora</button>
+                <button type="submit" id="button-send" onclick="showToast()">Enviar Agora</button>
             </div>
         </div>
 
