@@ -39,6 +39,7 @@ header h1 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
     color: var(--light-white);
+    padding-top: 40px;
 }
 
 header h2 {
@@ -47,6 +48,7 @@ header h2 {
     font-size: 4rem;
     color: var(--light-white);
     margin-bottom: 0.5rem;
+    padding-top: 5px;
 }
 
 header p {
@@ -137,6 +139,7 @@ nav form .gender input {
     margin-right: 0.6rem;
     width: 1.4rem;
     height: 1.4rem;
+    margin-bottom: 2px;
 }
 
 nav form .gender label {
@@ -156,6 +159,7 @@ section .divison-bar {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 18px;
 }
 
 section hr{

@@ -1,6 +1,6 @@
 const productsContainer = document.querySelector(".products")
 
-const buttonAddProducts = document.querySelectorAll(".more-products")
+const AddProductsbutton = document.querySelectorAll(".more-products")
 
 
 function showToast() {
@@ -10,11 +10,10 @@ function showToast() {
 }
 
 let page = 2
-buttonAddProducts.onclick = function(){
+AddProductsbutton.onclick = function(){
     page++
 }
 
-console.log(page)
 const url = `https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=${page}`
 
 fetch(url).then(function(res){
