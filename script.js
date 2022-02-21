@@ -2,16 +2,11 @@ const productsContainer = document.querySelector(".products")
 
 const buttonAddProducts = document.querySelectorAll(".more-products")
 
-let hasError = false
 
 function showToast() {
-    if(hasError = false){
-        let x = document.getElementById("snackbar");
+    let x = document.getElementById("snackbar");
         x.className = "show";
         setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-    }else{
-        return ''
-    }
 }
 
 let page = 2
@@ -45,10 +40,13 @@ fetch(url).then(function(res){
     
 })
 
+
+
 let formulario = document.querySelector("#form-cadastro")
 
 formulario.onsubmit = function(event){
     event.preventDefault()
+    let hasError = false
 
     let inputNome = document.forms['form-cadastro']['name']
     let inputEmail = document.forms['form-cadastro']['email']
@@ -56,26 +54,27 @@ formulario.onsubmit = function(event){
 
     if(!inputNome.value){
         inputNome.classList.add('inputError')
-        !hasError
+        hasError = true
     }else{
         inputNome.classList.remove('inputError')
-        hasError = false
     }
-    
     if(!inputEmail.value){
         inputEmail.classList.add('inputError')
-        !hasError
+        hasError = true
     }else{
         inputEmail.classList.remove('inputError')
-        !hasError
     }
 
     if(!inputCpf.value){
         inputCpf.classList.add('inputError')
-        !hasError
+        hasError = true
     }else{
         inputCpf.classList.remove('inputError')
-        !hasError
+    }
+
+    if (!hasError) {
+        showToast()
+        /*formulario.submit()*/
     }
 }
 
