@@ -79,9 +79,4 @@ formulario.onsubmit = function(event){
     }
 }
 
-
-
-
-
-
-
+console.log(hasError)
